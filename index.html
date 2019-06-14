@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FormData Example</title>
-  <link rel="stylesheet" href="index.css">
+	<title>My Bookmarks</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-  <form id="contactForm" action="#">
-    <div>
-      <label for="firstname">First Name</label>
-      <input type="text" id="firstname" name="firstname" placeholder="Enter first name">
-    </div>
-    <div>
-      <label for="lastname">First Name</label>
-      <input type="text" id="lastname" name="lastname" placeholder="Enter last name">
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Enter email">
-    </div>
-    <div>
-      <input type="submit" name="submit" id="submit" value="Submit Form">
-  </form>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="form.js"></script>
+	<header>
+		<h1>My Bookmarks</h1>
+	</header>
+	<button class="toggleForm">Add</button>
+	<form class="actions">
+		<select class="filterByRating">
+			<option value="">--Minimum Rating-</option>
+			<option value="oneStar">1 Star</option>
+			<option value="twoStars">2 Stars</option>
+			<option value="threeStars">3 Stars</option>
+			<option value="fourStars">4 Stars</option>
+			<option value="fiveStars">5 Stars</option>
+		</select>
+	</form>
+	<form class="addNew"></form>
+	<ul class="bookmarkList"></ul>	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+	
+	<script type="text/javascript" src="scripts/api.js"></script>
+	<script type="text/javascript" src="scripts/localStore.js"></script>
+	<script type="text/javascript" src="scripts/dom.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>
