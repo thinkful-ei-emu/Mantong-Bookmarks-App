@@ -20,12 +20,14 @@ const dom = (function() {
 
   function addNewForm() {
     return localStore.adding ? `
+    <form>
 			<label for="title">Title</label>
-			<input type="text" name="title" class="newTitle" placeholder="title"/>
+			<input type="text" id="title" class="newTitle" placeholder="title"/>
 			<label for="url">URL</label>
-			<input type="text" name="url" class="newUrl" placeholder="http://"/>
+			<input type="text" id="url" class="newUrl" placeholder="http://"/>
 			<label for="description">Description</label>
-			<input type="text" name="description" class="newDescription" placeholder="discription"/>
+      <input type="text" id="description" class="newDescription" placeholder="discription"/>
+      </form>
       <select class="newRating">       
         <option value="fiveStars">5 Stars</option>       
         <option value="fourStars">4 Stars</option>     
@@ -134,7 +136,7 @@ const dom = (function() {
 				${toggleDescriptionHtml(singleBookmarkObj)}
 				<button class="toggleDescription">Detail</button>
 				<button class="deleteArticle">Delete</button>
-        <p class="rating">Rating:${singleBookmarkObj.rating}&#9733 </p>
+        <p class="rating">Rating:${getStars(singleBookmarkObj.rating)} </p>
         
 		</li>
 		`;
