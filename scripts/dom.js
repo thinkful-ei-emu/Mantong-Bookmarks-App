@@ -134,8 +134,9 @@ const dom = (function() {
 				<h3>${singleBookmarkObj.title}</h3>
 				
 				${toggleDescriptionHtml(singleBookmarkObj)}
-				<button class="toggleDescription">Detail</button>
-				<button class="deleteArticle">Delete</button>
+        <button class="deleteArticle">Delete</button>
+        <button class="toggleDescription">Detail</button>
+				
         <p class="rating">Rating:${getStars(singleBookmarkObj.rating)} </p>
         
 		</li>

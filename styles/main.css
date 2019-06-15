@@ -9,10 +9,11 @@ button {
 	height: 25px;
 	background-color: rgb(122, 162, 236);
 	color: white;
-	border-radius: 10px;
-	margin: 10px;
+	border-radius: 5px;
+	margin: 5px;
 	border: 1px;
 	cursor: pointer;
+	float: right;
 }
 
 button.visit {
@@ -25,12 +26,11 @@ a {
 }
 li.article {
 	list-style: none;
-	border-radius: 25px;
+	border-radius: 10px;
 	border: 1px solid black;
-	padding: 15px;
-	margin-bottom: 5px;
-	
-
+	padding: 10px;
+	margin-bottom: 2px;
+	height:170px;
 }
 
 ul {
@@ -43,14 +43,15 @@ ul {
 
 button.toggleDescription,
 button.visit {
-	width: 100px;
+	width: 80px;
 }
 
 input[type=text] {
 	display: block;
 	width: 50%;
 	height: 20px;
-	padding: 5px;
+	padding: 10px;
+	margin-top: 2px;
 }
 
 form p {
